@@ -10,7 +10,7 @@ screen = pygame.display.set_mode(size)
 speed = (2, 2)
 white = (255, 255, 255)
 
-# Setup actor variables
+# Setup player variables
 box = pygame.image.load("box.png")
 boxrect = box.get_rect()
 
