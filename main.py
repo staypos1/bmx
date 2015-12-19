@@ -7,7 +7,12 @@ pygame.init()
 # Setup screen variables
 size = width, height = 800, 600
 screen = pygame.display.set_mode(size)
-black = (0, 0, 0)
+speed = (2, 2)
+white = (255, 255, 255)
+
+# Setup actor variables
+box = pygame.image.load("box.png")
+boxrect = box.get_rect()
 
 # Main game loop
 while True:
@@ -17,5 +22,6 @@ while True:
             sys.exit()
 
     # Create game window
-    screen.fill(black)
+    screen.fill(white)
+    screen.blit(box, boxrect)
     pygame.display.flip()
